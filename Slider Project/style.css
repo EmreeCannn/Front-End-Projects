@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    /* paddingleri dahil etmemesi için kullandım*/
+}
+body{
+    height:100vh;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_container{
+    position: relative;
+    width:600px;
+    height:370px;
+    overflow: hidden;
+    /* dersem eğer ekranımı 1 tane image göstermeye zorlamış olurum  */
+    border-radius: 20px;
+    box-shadow:
+     rgba(0, 0, 0, 0.25) 0px 54px 55px,
+     rgba(0, 0, 0, 0.12) 0px -12px 30px,
+     rgba(0, 0, 0, 0.12) 0px 4px 6px,
+     rgba(0, 0, 0, 0.17) 0px 12px 13px,
+     rgba(0, 0, 0, 0.09) 0px -3px 5px;
+     display: flex;
+     
+}
+.slider_container .icon{
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    /* yukarıdan 50 birim kadar uzaklıkta olucak yüzde 50 kadar */
+    /*  tam ortada olmadı tam ortada olması için */
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+}
+.prev{
+    left:10px;
+}
+.next{
+    right:10px;
+}
+
+.icon:hover{
+    color: darkgray;
+    transition: 0.4s;
+}
+
+.images_container{
+    display: flex;
+    transform: translate(-600px); 
+    /* bir sonraki resmi alır çünkü  şuanki resmimi 600px sola kaydır yani yok et sonraki resmimi göster dedim  */
+    transition: transform 340ms ease-in;
+    
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+.buttons span{
+    display: flex;
+    cursor: pointer;
+    margin: 0px 14px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+
+.bg-color{
+    background-color: black;
+    transition: 0.8s;
+}
+
+.bg-color2{
+    background-color:grey;
+    transition: 0.8s;
+}
+

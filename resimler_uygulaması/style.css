@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+.border_radius{
+    border-radius: 20px;
+    box-shadow:blanchedalmond;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+}
+h1{
+    margin-top: 25px;
+    text-align: center;
+}
+.image_div{
+    margin-left:200px;
+}
+.loader{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+

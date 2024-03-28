@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    /*  padddibgkerin wirdth dahil etmez */
+}
+body{
+    background-color: lightpink;
+}
+.fa-bars{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    font-size: 27px;
+    cursor: pointer;
+}
+.Sidebar{
+    position: fixed;
+    left:0;
+    top:0;
+    background-color: blueviolet;
+    height: 100%;
+    width: 19rem;
+    transition-property:transform;
+    transition-duration:1s;
+    transform: translate(-100%);
+}
+.Sidebar-header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.4rem;
+}
+.menu a{
+    text-decoration: none;
+    color:lightpink;
+    font-size: 20px;
+    display: block;
+    padding: 20px 4px;
+    transition-property: padding-left,background-color,color,border-top-right-radius,border-bottom-right-radius;
+    transition-duration: 1s;
+}
+.menu a:hover{
+    padding-left: 20px;
+    background-color: lightpink;
+    color: blueviolet;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+@media (max-width:768px){
+    .sidebar{
+        width: 100%;
+    }
+}
+.showSideBar{
+    transform: translate(0%);
+}
+.fa-xmark{
+    cursor: pointer;
+}
