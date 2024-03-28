@@ -1,0 +1,72 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100dvh;
+}
+
+.container{
+    background-color: lightpink;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.alert_container{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    /* eğer ben right kısmına -width kadar verirsem kaybolur */
+    background-color: lightgreen;
+    width: 300px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 30px;
+    font-size: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: right 1s ease-in-out;
+}
+.active{
+    right: -300px;
+}
+
+.input_Container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
+.input{
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    outline: none;
+}
+i{
+    font-size:27px;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+i:hover{
+    opacity: 1;
+}
+.Password_btn{
+    padding: 10px 30px;
+    font-size: 18px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    background-color: green;
+    color: wheat;
+    transition: all 0.4s ease-in;
+}
+.Password_btn:hover{
+    background-color: red;
+}

@@ -1,0 +1,49 @@
+body{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+.container{
+    background-color: pink;
+    padding: 20px;
+    border-radius: 20px;
+    width: 290px;
+}
+.input_section{
+    position: relative;
+}
+.input_section input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 11px;
+    outline: none;
+    margin-bottom: 20px;
+    transform: translateX(-10px);
+}
+i{
+    position: absolute;
+    right: 0;
+    top: 20%;
+    color: gray;
+    cursor: pointer;
+}
+i:hover{
+    color: black;
+}
+.btn{
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    color: pink;
+    border-radius: 10px;
+    padding: 6px;
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+.how_many{
+    display: flex;
+    justify-content: space-between;
+}

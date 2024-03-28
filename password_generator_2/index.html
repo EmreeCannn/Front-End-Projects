@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Şifre Üretici</h2>
+        <div class="input_Container">
+            <input type="text" placeholder="Yeni Şifre" readonly class="input">
+            <!-- ben sonradan inputumun içine girip bir şeyler eklenmesini istemiyorum 
+            bunu nasıl önlerim  readonly propertisi ile sağlarım yani adı üzerinde sadece oku demek -->
+            <i class="fa-regular fa-copy"></i>
+        </div>
+        <button class="Password_btn">Generate</button>
+    </div>
+    <div class="alert_container active">Password Copied !</div>
+    <script src="script.js"></script>
+</body>
+</html>
