@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stlye.css">
+    <title>Currency Convertor</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Convertor</h1>
+        <div class="currency_container">
+            <select id="CurrencyFirst" class="CurrencyFirst">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="JPY">JPY</option>
+                <!-- option içindeki değer her şey olabilir -->
+                <!-- fakat value kısmı istek attığım apideki işlem yapmak istediğim deger ile aynı olmalı -->
+            </select>
+            <input type="number" inputmode="numeric"  id="count" placeholder="currency" min="0" value="1">
+            <!-- başlangıç değeri 1 olucak value ile 1 verdim -->
+            <!--  min attribute sayesinde 0 dan küçük değer giremeyiz -->
+        </div>
+        <div class="currency_container">
+            <select id="CurrencySecond" class="CurrencySecond">
+                <option value="TRY" selected>TL</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="JPY">JPY</option>
+            </select>
+            <span id="equal"></span>
+        </div>
+        <p class="exchange_rate" id="exchange_rate"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

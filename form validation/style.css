@@ -1,0 +1,106 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    overflow-x: hidden;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.container{
+    margin: 100px 0;
+    width: 500px;
+    background-color: white;
+    border-radius: 14px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+input,textarea{
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 4px;
+    resize: none;
+}
+.form-group{
+    margin: 10px 0;
+}
+button{
+    width: 100%;
+    border: none;
+    padding: 15px 0;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 1s;
+}
+button:hover{
+    background-color: green;
+    color: white;
+}
+
+form{
+    width:90%;
+}
+
+.alert_message{
+    width: 90%;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom:20px;
+    border-radius: 7px;
+}
+input:valid,
+textarea:valid{
+    border: 1px solid green;
+}
+
+input:invalid,
+textarea:invalid{
+  border: 1px solid red;
+}
+
+
+.unvalid{
+    border: 2px dashed red;
+    border-radius: 15px;
+}
+.unvalid_title{
+    color: red;
+}
+
+.valid{
+    border: 2px dashed green;
+}
+.valid_title{
+    color: green;
+}
+
+.alertbox{
+    position: absolute;
+    bottom:0;
+    transform: translate(900px);
+    color: white;
+    background-color: green;
+    width: 200px;
+    height: 40px;
+    border-radius: 22px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+

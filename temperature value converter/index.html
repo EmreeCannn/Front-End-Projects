@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temprature Convertor</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Temprature Convertor</h1>
+        <div class="Temp_div">
+            <label>Celsius:</label>
+            <input onkeyup="calculateTemp(event)" type="number" name="celsius" id="celsius" placeholder="how many degrees is the weather ?" class="temp_input">
+            <!-- input içindeki değeri event.target.value diyerek alırım ama bana string gelir bunu int e pars etmem gerekir -->
+        </div>
+        <div class="Temp_div">
+            <label>Fahrenheit:</label>
+            <input onkeyup="calculateTemp(event)" type="number" name="fahrenheit" id="fahrenheit" placeholder="how many degrees is the weather ?" class="temp_input">
+        </div>
+        <div class="Temp_div">
+            <label>Kelvin:</label>
+            <input onkeyup="calculateTemp(event)" type="number" name="kelvin" id="kelvin" placeholder="how many degrees is the weather ?" class="temp_input">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
